@@ -1,0 +1,9 @@
+##Ignore idea
+./idea
+
+
+##Ignore node modul
+node_modules
+
+##Ignore build
+build
