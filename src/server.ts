@@ -9,7 +9,7 @@ import * as cors from "cors";
 // import Routers
 import PostRouter from './router/PostRouter';
 import StaticsRouter from './router/StaticsRouter';
-
+import UserRouter from './router/UserRouter';
 // Server Class
 
 class Server {
@@ -50,6 +50,7 @@ class Server {
     public routes (): void {
         this.app.use('/', StaticsRouter);
         this.app.use('/api/v1/posts', PostRouter);
+        this.app.use('/api/v1/users', UserRouter);
 
     }
 }

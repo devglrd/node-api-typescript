@@ -28,4 +28,4 @@ let UserSchema: Schema = new Schema({
     }
 });
 
-export default model('Post', UserSchema);
+export default model('User', UserSchema);
