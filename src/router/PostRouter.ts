@@ -11,7 +11,6 @@ class PostRouter {
     }
 
     public GetPosts(req: Request, res: Response) : void {
-
         Post.find({})
         .then((data) => {
             const status = res.statusCode;
@@ -127,5 +126,4 @@ class PostRouter {
 
 
 const postRoutes = new PostRouter();
-postRoutes.routes();
 export default postRoutes.router;
